@@ -21,3 +21,15 @@ for (let i = 0; i < favoriteRecipe.ingredients.length; i++) {
   console.log(`- ${favoriteRecipe.ingredients[i]}`);
 }
 console.log(`Инструкция: ${favoriteRecipe.directions}`);
+
+# index-of
+const paragraph = "The quick brown fox jumps over the lazy dog. If the dog barked, was it really lazy?";
+const searchTerm = "dog";
+
+const index = paragraph.indexOf(searchTerm);
+if (index !== -1) {
+  const foundWord = paragraph.substr(index, searchTerm.length);
+  console.log(`Найдено: "${foundWord}" на позиции ${index}`);
+} else {
+  console.log("Слово не найдено.");
+}
